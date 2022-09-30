@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Enter name: ");
+        Scanner sc=new Scanner(System.in);
+        String name=sc.next();
+        name = name.toLowerCase(); 
+        int vc=0,cc=0,i;
+        for(i=0;i<name.length();i++){
+        if(name.charAt(i)=='a' || name.charAt(i)=='e' || name.charAt(i)=='i' || name.charAt(i)=='o' || name.charAt(i)=='u' ){
+            vc++;
+        }else{
+            cc++;
+        }
+        }
+        System.out.println("vc= "+ vc);
+        System.out.println("cc= "+ cc);
+        
+    }
+ } 
+     

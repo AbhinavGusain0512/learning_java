@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Enter Name : ");
+        String name=sc.next();
+        int size=name.length();
+        System.out.println(size);
+        int mid;
+        if(size%2==0){
+            System.out.println("There are two mid points "+ name.charAt((size-1)/2) + " and "+ name.charAt((size)/2  ) );
+        }
+        else{
+            System.out.println( "The mid char is "+ name.charAt(size/2) );
+        }
+        
+    }
+}
